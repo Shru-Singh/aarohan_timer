@@ -40,20 +40,7 @@
     top: 0;
     left: 0;
   }
-  .bg_grain {
-    position: fixed;
-    left: 0%;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
-    z-index: -8;
-    /* display: none; */
-    width: 100vw;
-    height: 100vh;
-    background-image: url(./assets/grain.png);
-    background-position: 0px 0px;
-    background-size: 200px;
-  }
+ 
   .container {
     color: White;
     margin: 0 auto;
