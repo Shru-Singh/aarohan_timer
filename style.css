@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+:root {
+    --smaller: .75;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    align-items: center;
+    display: flex;
+    position: relative;
+    font-family: 'Audiowide', cursive;
+  }
+  #myVideo {
+    position: fixed;
+    z-index: -10;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+  .bg_blur {
+    /* backdrop-filter: blur(2px); */
+    background-color: rgba(32, 0, 15, 0.356);
+    z-index: -8;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+  .bg_grain {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: -8;
+    /* display: none; */
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./assets/grain.png);
+    background-position: 0px 0px;
+    background-size: 200px;
+  }
+  .container {
+    color: White;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .container img {
+      width : 150px;
+      height: auto;
+  }
+  
+  h1 {
+    font-weight: bold;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+    -webkit-animation: glow2 1s ease-in-out infinite alternate;
+    -moz-animation: glow2 1s ease-in-out infinite alternate;
+    animation: glow2 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow2 {
+    from {
+      text-shadow: 0 0 5px rgb(226, 113, 241), 0 0 20px  rgb(149, 30, 185);
+    }
+    to {
+      text-shadow: 0 0 25px rgb(226, 113, 241), 0 0 40px  rgb(161, 25, 202);
+    }
+  }
+  
+  li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+    -webkit-animation: glow2 1s ease-in-out infinite alternate;
+    -moz-animation: glow2 1s ease-in-out infinite alternate;
+    animation: glow2 1s ease-in-out infinite alternate;
+  }
+  
+  li span {
+    display: block;
+    font-size: 4.5rem;
+    -webkit-animation: glow2 1s ease-in-out infinite alternate;
+    -moz-animation: glow2 1s ease-in-out infinite alternate;
+    animation: glow2 1s ease-in-out infinite alternate;
+  }
+  
+  .emoji {
+    display: none;
+    padding: 1rem;
+  }
+  
+  .emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+  }
+  
+  @media all and (max-width: 768px) {
+    h1 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+    li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+    .container img{
+        width: 100px;
+    }
+  }
