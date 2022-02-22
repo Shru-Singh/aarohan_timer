@@ -56,7 +56,9 @@
     font-weight: bold;
     letter-spacing: .125rem;
     text-transform: uppercase;
-   text-shadow: 0 0 40px  rgb(161, 25, 202);
+    -webkit-animation: glow2 1s ease-in-out infinite alternate;
+    -moz-animation: glow2 1s ease-in-out infinite alternate;
+    animation: glow2 1s ease-in-out infinite alternate;
   }
   
   /* @keyframes glow2 {
@@ -74,13 +76,17 @@
     list-style-type: none;
     padding: 1em;
     text-transform: uppercase;
-    text-shadow: 0 0 40px  rgb(161, 25, 202);
+    -webkit-animation: glow2 1s ease-in-out infinite alternate;
+    -moz-animation: glow2 1s ease-in-out infinite alternate;
+    animation: glow2 1s ease-in-out infinite alternate;
   }
   
   li span {
     display: block;
     font-size: 4.5rem;
-    text-shadow: 0 0 40px  rgb(161, 25, 202);
+    -webkit-animation: glow2 1s ease-in-out infinite alternate;
+    -moz-animation: glow2 1s ease-in-out infinite alternate;
+    animation: glow2 1s ease-in-out infinite alternate;
   }
   
   .emoji {
