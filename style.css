@@ -61,14 +61,14 @@
     animation: glow2 1s ease-in-out infinite alternate;
   }
   
-  @keyframes glow2 {
+  /* @keyframes glow2 {
     from {
       text-shadow: 0 0 5px rgb(226, 113, 241), 0 0 20px  rgb(149, 30, 185);
     }
     to {
       text-shadow: 0 0 25px rgb(226, 113, 241), 0 0 40px  rgb(161, 25, 202);
     }
-  }
+  } */
   
   li {
     display: inline-block;
